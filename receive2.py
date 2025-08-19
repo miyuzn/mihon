@@ -49,7 +49,7 @@ def receive_broadcast():
     # Socket for visualization
     local_ip = "127.0.0.1"
     local_port = 53000
-    # local_port2 = 53001
+    local_port2 = 53001
     sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     print("Connecting to sensor...")
@@ -59,7 +59,7 @@ def receive_broadcast():
 
         data2 = pickle.dumps((data_l, data_r))
         sock2.sendto(data2, (local_ip, local_port))
-        # sock2.sendto(data2, (local_ip, local_port2))
+        sock2.sendto(data2, (local_ip, local_port2))
         
         data_list_l.append(sensor.parse_sensor_data(data_l))
         data_list_r.append(sensor.parse_sensor_data(data_r))
