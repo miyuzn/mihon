@@ -6,7 +6,6 @@ import pickle
 import pandas as pd
 import math
 from datetime import datetime
-
 # ------------ Configuration ------------
 # Raw sensor UDP ports
 PORT_L = 13250
