@@ -7,7 +7,8 @@ from datetime import datetime
 # new_insole: 
 # left: 13250; right: 13251
 # test_2_sensor: 13400
-PORT = 13600
+# left_direct: 13001
+PORT = 13001
 data_list = []
 
 # 定义一个信号处理器，用于捕获中断信号
