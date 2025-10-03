@@ -17,7 +17,7 @@ def signal_handler(sig, frame):
     now = datetime.now()
 
     # 格式化时间
-    file_name = './exp/0613/' + str(now.strftime("%Y%m%d_%H%M%S") + ".csv")
+    file_name = './exp/' + str(now.strftime("%Y%m%d_%H%M%S") + ".csv")
     
 
     print(f'\nExiting gracefully. Sensor data saved to {file_name}.')
